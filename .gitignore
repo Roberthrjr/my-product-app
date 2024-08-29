@@ -1,2 +1,6 @@
 # Archivos y carpetas a ignorar
+<<<<<<< HEAD
 /.idea
+=======
+.idea
+>>>>>>> 0b88f74 (Commit inicial del proyecto)
