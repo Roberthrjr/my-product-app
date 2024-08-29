@@ -18,7 +18,7 @@ a. Clonar el repositorio
    Utiliza Git para clonar el repositorio en tu máquina local. Abre una terminal y ejecuta el siguiente comando:
 
    ```
-   git clone https://github.com/tu-usuario/my-product-app.git
+   git clone https://github.com/Roberthrjr/my-product-app.git
    ```
 
 b. Configurar la base de datos
@@ -52,13 +52,7 @@ c. Configurar la aplicación
 
    a. Si estás utilizando XAMPP (o similar), mueve el proyecto a la carpeta `htdocs` y accede al proyecto a través de `http://localhost/my-product-app/views/`.
 
-   b. Alternativamente, puedes usar el servidor embebido de PHP:
-
-      ```
-      php -S localhost:8000 -t my-product-app/views
-      ```
-
-   c. Abre tu navegador y ve a `http://localhost:8000/index.html` para acceder al formulario de registro de productos.
+   c. Abre tu navegador y ve a `http://localhost/my-product-app/views/index.html` para acceder al formulario de registro de productos.
 
 4. USO DEL SISTEMA
 

@@ -118,7 +118,7 @@ document.getElementById('productForm').addEventListener('submit', function (even
         alert('La descripción del producto es obligatoria y debe tener entre 10 y 1000 caracteres.');
         return; // Detener el envío si la validación falla
     }
-    
+
     // Si todas las validaciones son exitosas, proceder a enviar los datos
     const formData = new FormData(this); // Crear un FormData con los datos del formulario
 

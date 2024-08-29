@@ -48,7 +48,7 @@ Este proyecto es una aplicación web sencilla para gestionar el registro de prod
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/my-product-app.git
+   git clone https://github.com/Roberthrjr/my-product-app.git
    ```
 
 2. **Configurar la base de datos**:
@@ -70,7 +70,7 @@ Este proyecto es una aplicación web sencilla para gestionar el registro de prod
 
 4. **Iniciar el servidor**:
     - Si estás usando `XAMPP`, mueve el proyecto a la carpeta `htdocs` y accede a `http://localhost/my-product-app/views/`.
-    - Accede a `http://localhost:8000/index.html`.
+    - Accede a `http://localhost/my-product-app/views/index.html`.
 
 ## Uso
 
