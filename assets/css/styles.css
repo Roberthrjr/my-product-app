@@ -1,0 +1,123 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal a Arial, con sans-serif como respaldo */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    padding: 0; /* Elimina el padding predeterminado del navegador */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    font-size: 16px; /* Tamaño de letra general */
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: white; /* Color de fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 25px; /* Espaciado interno alrededor del contenido */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor del contenedor */
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    max-width: 700px; /* Ancho máximo del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilo para el título principal del formulario */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #333; /* Color de texto gris oscuro */
+    font-size: 30px; /* Tamaño de la fuente del título */
+}
+
+/* Fila del formulario */
+.form-row {
+    display: flex; /* Utiliza flexbox para alinear elementos en la fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+    justify-content: space-between; /* Distribuye los elementos de manera equitativa en la fila */
+    margin-bottom: 15px; /* Espacio debajo de cada fila */
+}
+
+/* Grupo de formulario */
+.form-group {
+    width: 100%; /* El grupo de formulario ocupa todo el ancho disponible */
+    margin-bottom: 15px; /* Espacio debajo de cada grupo de formulario */
+}
+
+/* Grupo de formulario con ancho reducido (utilizado para dividir en dos columnas) */
+.form-group.half-width {
+    width: 48%; /* Ocupa el 48% del ancho, dejando espacio para otro grupo en la misma fila */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    display: block; /* La etiqueta ocupa toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilo para los campos de entrada de texto, selectores y áreas de texto */
+input[type="text"],
+select,
+textarea {
+    width: 100%; /* Los campos ocupan todo el ancho disponible */
+    padding: 10px; /* Espaciado interno dentro de los campos */
+    border: 1px solid #ccc; /* Borde gris claro alrededor de los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilo específico para el área de texto */
+textarea {
+    font-family: Arial, sans-serif; /* Fuente utilizada dentro del área de texto */
+    resize: vertical; /* Permite redimensionar el área de texto solo en la dirección vertical */
+    height: 100px; /* Altura predeterminada del área de texto */
+}
+
+/* Grupo de checkboxes */
+.checkbox-group {
+    display: flex; /* Utiliza flexbox para alinear elementos en la fila */
+    justify-content: space-between; /* Distribuye los checkboxes equitativamente */
+    flex-wrap: wrap; /* Permite que los checkboxes se envuelvan a la siguiente línea si es necesario */
+}
+
+/* Estilo para las etiquetas de los checkboxes */
+.checkbox-group label {
+    margin-right: 10px; /* Espacio a la derecha de cada etiqueta de checkbox */
+}
+
+/* Estilo para los checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px; /* Espacio a la derecha de cada checkbox */
+}
+
+/* Estilo para el botón de envío */
+button {
+    padding: 10px 40px; /* Espaciado interno del botón (10px arriba/abajo, 40px izquierda/derecha) */
+    background-color: #1aab8a; /* Color de fondo verde */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: block; /* El botón ocupa toda la línea */
+    margin: 20px auto 0; /* Centra el botón horizontalmente y añade margen superior */
+}
+
+/* Cambio de color del botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #17a07b; /* Color de fondo más oscuro cuando se pasa el cursor */
+}
+
+/* Estilos específicos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    /* Los grupos de formulario con ancho reducido ocupan todo el ancho disponible en pantallas pequeñas */
+    .form-group.half-width {
+        width: 100%;
+    }
+
+    /* Reduce la altura del área de texto en pantallas pequeñas */
+    textarea {
+        height: 80px;
+    }
+}

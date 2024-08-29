@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Declaración del documento como HTML5 -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuración del viewport para responsive design -->
+    <title>Formulario de Registro de Producto</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Enlace a la hoja de estilos CSS -->
+</head>
+<body>
+<div class="form-container">
+    <!-- Contenedor principal del formulario -->
+    <h1>Formulario de Producto</h1> <!-- Título del formulario -->
+    <form id="productForm"> <!-- Inicio del formulario con ID para su manipulación -->
+
+        <!-- Primera fila del formulario: Código y Nombre -->
+        <div class="form-row">
+            <div class="form-group half-width">
+                <label for="codigo">Código</label> <!-- Etiqueta para el campo de código -->
+                <input type="text" id="codigo" name="codigo" placeholder="PROD01K">
+                <!-- Campo de entrada para el código del producto -->
+            </div>
+            <div class="form-group half-width">
+                <label for="nombre">Nombre</label> <!-- Etiqueta para el campo de nombre -->
+                <input type="text" id="nombre" name="nombre" placeholder="Set Comedor">
+                <!-- Campo de entrada para el nombre del producto -->
+            </div>
+        </div>
+
+        <!-- Segunda fila del formulario: Bodega y Sucursal -->
+        <div class="form-row">
+            <div class="form-group half-width">
+                <label for="bodega">Bodega</label> <!-- Etiqueta para el campo de bodega -->
+                <select id="bodega" name="bodega"> <!-- Desplegable para seleccionar la bodega -->
+                    <option value="" selected disabled>Seleccione una bodega</option> <!-- Opción predeterminada -->
+                </select>
+            </div>
+            <div class="form-group half-width">
+                <label for="sucursal">Sucursal</label> <!-- Etiqueta para el campo de sucursal -->
+                <select id="sucursal" name="sucursal"> <!-- Desplegable para seleccionar la sucursal -->
+                    <option value="" selected disabled>Seleccione una sucursal</option> <!-- Opción predeterminada -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Tercera fila del formulario: Moneda y Precio -->
+        <div class="form-row">
+            <div class="form-group half-width">
+                <label for="moneda">Moneda</label> <!-- Etiqueta para el campo de moneda -->
+                <select id="moneda" name="moneda"> <!-- Desplegable para seleccionar la moneda -->
+                    <option value="" selected disabled>Seleccione una moneda</option> <!-- Opción predeterminada -->
+                </select>
+            </div>
+            <div class="form-group half-width">
+                <label for="precio">Precio</label> <!-- Etiqueta para el campo de precio -->
+                <input type="text" id="precio" name="precio" placeholder="1500.00">
+                <!-- Campo de entrada para el precio del producto -->
+            </div>
+        </div>
+
+        <!-- Cuarta fila del formulario: Material del Producto (Checkboxes) -->
+        <div class="form-group full-width">
+            <label>Material del Producto</label> <!-- Etiqueta para los materiales -->
+            <div class="checkbox-group">
+                <!-- Grupo de checkboxes para seleccionar los materiales del producto -->
+                <input type="checkbox" id="plastico" name="materiales[]" value="Plástico">
+                <label for="plastico">Plástico</label>
+
+                <input type="checkbox" id="metal" name="materiales[]" value="Metal">
+                <label for="metal">Metal</label>
+
+                <input type="checkbox" id="madera" name="materiales[]" value="Madera">
+                <label for="madera">Madera</label>
+
+                <input type="checkbox" id="vidrio" name="materiales[]" value="Vidrio">
+                <label for="vidrio">Vidrio</label>
+
+                <input type="checkbox" id="textil" name="materiales[]" value="Textil">
+                <label for="textil">Textil</label>
+            </div>
+        </div>
+
+        <!-- Quinta fila del formulario: Descripción -->
+        <div class="form-group full-width">
+            <label for="descripcion">Descripción</label> <!-- Etiqueta para el campo de descripción -->
+            <textarea id="descripcion" name="descripcion" placeholder="Descripción del producto..."></textarea>
+            <!-- Área de texto para la descripción del producto -->
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <div class="form-group button">
+            <button type="submit">Guardar Producto</button> <!-- Botón para enviar los datos del formulario -->
+        </div>
+    </form>
+</div>
+<script src="../assets/js/script.js"></script> <!-- Enlace al archivo JavaScript que maneja la lógica del formulario -->
+</body>
+</html>
