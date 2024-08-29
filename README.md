@@ -100,10 +100,6 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes ver más detalles en el archivo LICENSE.
-
 ## Autor
 
 - **Roberth Jason Rios Jesus** - Ingeniero de Sistemas.
