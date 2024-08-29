@@ -89,21 +89,6 @@ document.getElementById('productForm').addEventListener('submit', function (even
         return; // Detener el envío si la validación falla
     }
 
-    if (precio === '' || !/^\d+(\.\d{1,2})?$/.test(precio)) {
-        alert('El precio del producto es obligatorio y debe ser un número positivo con hasta dos decimales.');
-        return; // Detener el envío si la validación falla
-    }
-
-    if (materiales.length < 2) {
-        alert('Debe seleccionar al menos dos materiales para el producto.');
-        return; // Detener el envío si la validación falla
-    }
-
-    if (descripcion === '' || descripcion.length < 10 || descripcion.length > 1000) {
-        alert('La descripción del producto es obligatoria y debe tener entre 10 y 1000 caracteres.');
-        return; // Detener el envío si la validación falla
-    }
-
     if (bodega === '') {
         alert('Debe seleccionar una bodega.');
         return; // Detener el envío si la validación falla
@@ -119,6 +104,21 @@ document.getElementById('productForm').addEventListener('submit', function (even
         return; // Detener el envío si la validación falla
     }
 
+    if (precio === '' || !/^\d+(\.\d{1,2})?$/.test(precio)) {
+        alert('El precio del producto es obligatorio y debe ser un número positivo con hasta dos decimales.');
+        return; // Detener el envío si la validación falla
+    }
+
+    if (materiales.length < 2) {
+        alert('Debe seleccionar al menos dos materiales para el producto.');
+        return; // Detener el envío si la validación falla
+    }
+
+    if (descripcion === '' || descripcion.length < 10 || descripcion.length > 1000) {
+        alert('La descripción del producto es obligatoria y debe tener entre 10 y 1000 caracteres.');
+        return; // Detener el envío si la validación falla
+    }
+    
     // Si todas las validaciones son exitosas, proceder a enviar los datos
     const formData = new FormData(this); // Crear un FormData con los datos del formulario
 
